@@ -8,7 +8,7 @@ const Contact = () => {
             <input className = "contactinput" type = "text" id = "fname" name = "firstname" placeholder= "First Name" required />
             <input className = "contactinput" type = "text" id = "lname" name = "lastname" placeholder= "Last Name" required />
             <input className = "contactinput" type = "email" id = "email" name = "email" placeholder= "Email" required />
-            <input className = "contactinput" type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+            <input className = "contactinput" type="text" id="comment" name="comment" placeholder="Leave a message" required/>
             <input id = "submitbtn" type = "submit"/>
             </form>
         </div>
