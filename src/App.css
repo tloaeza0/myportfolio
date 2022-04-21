@@ -1,38 +1,459 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&family=Raleway&display=swap");
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 15vh;
+}
+
+nav {
+  position: absolute;
+  line-height: 6vh;
+  margin: 0 0 0 0;
+}
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin: 1em;
+  padding: 1.5em;
+  font-family: "Libre Franklin", sans-serif;
+}
+nav a {
+  text-decoration: none;
+  color: #f5f5f7;
+  font-size: 0.5em;
+  display: inline-block;
+  position: relative;
+}
+nav a:hover {
+  color: darkgray;
+}
+
+@media (min-width: 600px) {
+  li {
+    margin: 0 0 0 0;
+  }
+
+  a {
+    color: pink;
+    font-size: 6em;
+  }
+}
+@media (min-width: 850px) {
+  nav {
+    line-height: 10vh;
+    margin-left: 30em;
+  }
+  nav a {
+    font-size: 1em;
+  }
+}
+body {
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  padding-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  color: black;
+}
+
+.section1 {
+  height: 30vh;
+  margin-bottom: 4em;
+}
+
+.about {
+  background-color: white;
+}
+.about h2 {
+  font-size: 1.3em;
+  font-family: "Raleway", sans-serif;
+  margin: 2em 0 0 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.about p {
+  width: 80%;
+  font-size: 1em;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 1em 0 0 2.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image1 {
+  background-color: white;
+}
+.image1 img {
+  width: 450px;
+  height: 450px;
+  margin: -4em 0 0 -3em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.projects {
+  width: 100%;
+  height: 30vh;
+  margin: 18em 0 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("../public/pimages/code.jpg") no-repeat center/cover;
+}
+.projects h3 {
+  text-align: center;
+  padding-top: 1em;
+  font-size: 2.5em;
   color: white;
+  font-family: "Raleway", sans-serif;
+}
+.projects a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.5em;
+  padding: 1em 2em;
+  text-align: center;
+  display: inline-block;
+  margin: 3em 0 0 18em;
 }
 
-.App-link {
-  color: #61dafb;
+.resume {
+  margin: 2em 0 0 6.6em;
+}
+.resume a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 800px) {
+  .title {
+    font-size: 3em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about h2 {
+    font-size: 2em;
+    margin: 3em 0 0 3em;
+    text-align: left;
+  }
+  .about p {
+    width: 80%;
+    font-size: 1.3em;
+    margin: 1em 0 0 4em;
+  }
+
+  .image1 {
+    background-color: white;
+  }
+  .image1 img {
+    width: 550px;
+    height: 550px;
+    margin: -5em 0 0 2em;
+  }
+
+  .projects {
+    height: 80vh;
+  }
+  .projects h3 {
+    padding-top: 5em;
+    font-size: 2.5em;
+  }
+  .projects a {
+    font-size: 1.2em;
+    padding: 1em 2em;
+    text-align: center;
+    display: inline-block;
+    margin: 3em 0 0 32em;
+  }
+  .projects a:hover {
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+  }
+
+  .resume {
+    margin: 2em 0 0 35em;
+  }
+  .resume a {
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+  }
+  .resume a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .resume a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }
+h4 {
+  font-size: 0.8em;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.ssicons {
+  width: 100%;
+  text-align: center;
+}
+.ssicons li {
+  list-style: none;
+  display: inline-block;
+  margin: 4em 1.3em 0 0;
+  font-size: 1.2em;
+}
+.ssicons a {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 800px) {
+  h4 {
+    font-size: 1em;
+  }
+
+  .ssicons {
+    margin: 4em 0 0 0;
+  }
+  .ssicons li {
+    font-size: 0.4em;
+    margin: 1em;
+  }
+}
+.contactform {
+  width: 45%;
+  height: 65vh;
+  background-color: white;
+  margin: 5em 0 0 4em;
+  border-radius: 5px;
+}
+.contactform h1 {
+  margin: 0 0 0 5em;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+}
+
+.contactinput {
+  width: 15em;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(233, 224, 224);
+  font-size: 1em;
+  margin: 2em 0 1em 0;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#submitbtn {
+  width: 10em;
+  height: 6vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid darkgray;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  margin: 1.5em 0 0 4.5em;
+}
+
+@media (min-width: 800px) {
+  .contactform {
+    width: 35%;
+    margin: 5em 0 0 29em;
+    border-radius: 5px;
+  }
+  .contactform h1 {
+    font-size: 1.5em;
+    margin: 0 0 0 0;
+  }
+
+  .contactinput {
+    width: 22em;
+    font-size: 1.3em;
+  }
+
+  #submitbtn {
+    margin-left: 13em;
+  }
+}
+h1 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 2em;
+  padding: 1em 0 1em 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 12fr);
+}
+
+.grid-item1 {
+  height: 65vh;
+}
+.grid-item1 h2 {
+  color: white;
+  font-size: 2em;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin: 2em 0 0 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.grid-item1 h5 {
+  color: white;
+  margin: 1em 0 0 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+.grid-item1 p {
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 1em;
+  width: 80%;
+  text-align: center;
+  margin: 1em 0 0 2.6em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.grid-item1 h3 {
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 1em;
+  margin: 0 0 0 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.grid-item1 h4 {
+  color: white;
+  padding-top: 1em;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+.grid-item1 .buttons {
+  margin: 0 0 0 1.8em;
+}
+.grid-item1 a {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8em;
+  padding: 1em 2em;
+  text-align: center;
+  display: inline-block;
+  margin: 3em 0 0 2em;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-item1 {
+    height: 80vh;
+  }
+  .grid-item1 h2 {
+    color: white;
+    font-size: 2.5em;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    margin: 2em 0 0 2em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .grid-item1 h5 {
+    color: white;
+    margin: 1em 0 0 6.5em;
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .grid-item1 p {
+    color: white;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.3em;
+    width: 80%;
+    text-align: left;
+    margin: 1em 0 0 3.9em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .grid-item1 h3 {
+    color: white;
+    font-family: "Libre Franklin", sans-serif;
+    text-align: left;
+    padding-top: 1em;
+    font-size: 1em;
+    margin: 0 0 0 5em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .grid-item1 h4 {
+    color: white;
+    padding-top: 1em;
+    font-size: 0.8em;
+    text-align: left;
+    margin: 0 0 0 7em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .grid-item1 .buttons {
+    margin: 0 0 0 3em;
+  }
+  .grid-item1 a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 1em;
+    padding: 1em 2em;
+    text-align: center;
+    display: inline-block;
+    margin: 3em 0 0 2em;
+  }
+  .grid-item1 a:hover {
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+  }
+
+  .grid-item2 {
+    background: url("../public/pimages/gateway.png") no-repeat center/cover;
+    height: 80vh;
+  }
+
+  .grid-item3 {
+    background: url("../public/pimages/hopehack.png") no-repeat center/cover;
+  }
+
+  .grid-item4 {
+    background: url("../public/pimages/pennyjuice.png") no-repeat center/cover;
+  }
+
+  .grid-item5 {
+    background: url("../public/pimages/ecommerce.png") no-repeat center/cover;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=app.css.map */

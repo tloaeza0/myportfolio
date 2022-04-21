@@ -1,0 +1,34 @@
+h4{
+    font-size:.8em;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    color:rgba(0,0,0,0.8);
+}
+.ssicons{
+    width:100%;
+    text-align: center;
+
+    li{
+        list-style: none;
+        display: inline-block;
+        margin:4em 1.3em 0 0;
+        font-size: 1.2em;   
+    }
+    a{
+        color:rgba(0,0,0,0.8);
+    }
+}
+
+
+@media (min-width: 800px){
+    h4{
+        font-size: 1em;
+    }
+.ssicons{
+    margin: 4em 0 0 0;
+    li{
+        font-size: .4em; 
+        margin: 1em;  
+    }
+}
+}

@@ -1,0 +1,51 @@
+.contactform{
+    width:45%;
+    height:65vh;
+    background-color:white;
+    margin: 5em 0 0 4em;
+    border-radius:5px;
+    h1{
+        margin: 0 0 0 5em;
+        font-size: 1em;
+        font-family: 'Raleway', sans-serif;
+
+    }
+}
+.contactinput{
+    width:15em;
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom: 2px solid rgb(233, 224, 224);
+    font-size:1em;
+    margin: 2em 0 1em 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+#submitbtn{
+    width:10em;
+    height:6vh;
+    background-color:rgba(0,0,0,0.8);
+    border:1px solid darkgray;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    margin: 1.5em 0 0 4.5em;
+}
+
+@media (min-width: 800px){
+.contactform{
+    width:35%;
+    margin: 5em 0 0 29em;
+    border-radius:5px;
+    h1{
+        font-size: 1.5em;
+        margin: 0 0 0 0;
+    }
+}
+.contactinput{
+    width:22em;
+    font-size:1.3em;
+}
+#submitbtn{
+    margin-left: 13em;
+}
+}
