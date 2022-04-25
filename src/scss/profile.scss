@@ -25,15 +25,17 @@ body{
         font-size:1em;
         font-family: 'Libre Franklin', sans-serif;
         margin: 1em 0 0 2.5em;
+        text-align: left;
     }
     
 }
 .image1{
     background-color:white;
+    margin: -4em 0 0 -1.5em;
     img{
-        width:450px;
-        height:450px;
-        margin: -4em 0 0 -3em;
+        width:400px;
+        height:420px;
+        margin: 0 0 0 0;
     }
 }
 .projects{
@@ -75,10 +77,49 @@ body{
 }
 
 @media (min-width:600px){
-
+    .title{
+        font-size: 3em;
+    }
+    .section1{
+        height:40vh;
+    }
+    .about{
+        h2{
+            font-size: 2.3em;
+            
+        }
+        p{
+            font-size: 1.7em;
+            text-align: center;
+        }
+    }
+    .img1{
+        img{
+            margin: 0 0 0 0;
+           
+        }
+    }
+    .projects{
+        a{
+            font-size: 1.2em;
+            padding:1em 2em;
+            text-align: center;
+            display: inline-block;
+            margin: 4em 0 0 15.5em;
+    
+    }}
+    .resume{
+        margin: 2em 0 0 16.5em;
+        a{
+            display:inline-block;
+            position: relative;
+            font-size: 2em;   
+        }
+    }
 }
 
-@media (min-width: 800px){
+@media (min-width: 850px){
+
 .title{
     font-size: 3em;
 }
@@ -96,15 +137,16 @@ body{
         width:80%;
         font-size:1.3em;
         margin: 1em 0 0 4em;
+        text-align: left;
     }
     
 }
 .image1{
     background-color:white;
     img{
-        width:550px;
-        height:550px;
-        margin: -5em 0 0 2em;
+        width:530px;
+        height:530px;
+        margin: 1em 0 0 2em;
     }
 }
 .projects{
@@ -129,7 +171,7 @@ body{
     }
 }
 .resume{
-    margin: 2em 0 0 35em;
+    margin: 2em 0 0 37em;
     a{
         display:inline-block;
         position: relative;

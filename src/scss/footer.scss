@@ -19,6 +19,17 @@ h4{
     }
 }
 
+@media (min-width:600px){
+    h4{
+        font-size:1.5em ;
+    }
+    .ssicons{
+        li{
+            font-size: 2em;
+            margin: 3em 0 0 1em;
+        }
+    }
+}
 
 @media (min-width: 800px){
     h4{
@@ -27,7 +38,7 @@ h4{
 .ssicons{
     margin: 4em 0 0 0;
     li{
-        font-size: .4em; 
+        font-size: 2em; 
         margin: 1em;  
     }
 }

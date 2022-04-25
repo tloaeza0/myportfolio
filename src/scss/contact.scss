@@ -30,8 +30,25 @@
     font-family: 'Raleway', sans-serif;
     margin: 1.5em 0 0 4.5em;
 }
-
-@media (min-width: 800px){
+@media (min-width:600px){
+    .contactform{
+        margin: 3em 0 0 12em;
+        width:35%;
+        h1{
+            font-size: 2em;
+            margin: 0 0 0 3.5em;
+        }
+    }
+    .contactinput{
+        width: 20em;
+        font-size: 1.4em;
+    }
+    #submitbtn{
+        margin: 2em 0 0 8em;
+        width:15em;
+    }
+}
+@media (min-width: 850px){
 .contactform{
     width:35%;
     margin: 5em 0 0 29em;

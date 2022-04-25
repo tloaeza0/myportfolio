@@ -4,13 +4,13 @@ header{
     height:15vh;
 }
 nav{
-    position: absolute;
+    position: relative;
     line-height: 6vh;
     margin:0 0 0 0;
     li{
         list-style: none;
         display: inline-block;
-        margin:1em;
+        margin:0 0 0 2em;
         padding:1.5em;
         font-family: 'Libre Franklin', sans-serif;
     }
@@ -25,24 +25,30 @@ nav{
        color:darkgray;
     }
 }
-@media (min-width: 600px){
-   li{
-       margin: 0 0 0 0;
-   }
-   a{
-       color:pink;
-       font-size: 6em;
-   }
-       
+
+@media (min-width:600px){
+    header{
+        font-size:2em;
+    }
+    nav{
+        li{
+            margin:0 0 0 2.5em;
+        }
+    }
+    
 }
 
 @media (min-width: 850px){
 
 nav{
     line-height: 10vh;
-    margin-left:30em;
+    margin-left:10em;
+    li{
+        display:inline-block;
+        margin-top:-1em;
+    }
     a{
-        font-size: 1em;
+        font-size: .4em;
     }
 }
 }
