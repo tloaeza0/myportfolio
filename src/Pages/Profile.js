@@ -24,7 +24,7 @@ const Profile = () => {
         </div>
 
         <div className = "resume">
-            <a href = {Resume} target="_blank" rel="noopener noreferrer"> View Resume Here</a>
+            <a href = {Resume} download> View Resume Here</a>
         </div>
         </>
     )
