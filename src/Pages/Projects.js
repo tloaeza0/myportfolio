@@ -12,7 +12,7 @@ const Projects = () => {
                     <h5>R2H Apprenticeship</h5>
                     <p>I built this project for Gateway to present for the Road to Hire Apprenticeship. This website is based on Costa rica. This website was built using HTML and CSS.</p>
                     <h3>Technologies:</h3>
-                    <h4>HTML and CSS</h4>
+                    <h4>HTML, CSS, Web Accessibility</h4>
                     <div className = "buttons">
                     <a href = "https://github.com/tloaeza0/gateway" target="_blank" rel="noopener noreferrer">View Github</a>
                     <a href = "https://tloaeza0.github.io/gateway/" target="_blank" rel="noopener noreferrer">View Website</a>
@@ -38,7 +38,7 @@ const Projects = () => {
                     <h5>R2H Apprenticeship</h5>
                     <p>This website is a redesign for a company called Pennyjuice. My team and I decicded to take a webaite that wasnt so appealing to the ey and turned it into something better. I was responsible for the order page where the user can input their inforation and specify how many juices they would like to order.</p>
                     <h3>Technologies:</h3>
-                    <h4>React and Web Accessibility</h4>
+                    <h4>React and Javascript</h4>
 
                     <div className = "buttons">
                     <a href = "https://github.com/tloaeza0/pennyjuice" target="_blank" rel="noopener noreferrer">View Github</a>
