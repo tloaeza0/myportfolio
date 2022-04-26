@@ -38,7 +38,7 @@ const Projects = () => {
                     <h5>R2H Apprenticeship</h5>
                     <p>This website is a redesign for a company called Pennyjuice. My team and I decicded to take a webaite that wasnt so appealing to the ey and turned it into something better. I was responsible for the order page where the user can input their inforation and specify how many juices they would like to order.</p>
                     <h3>Technologies:</h3>
-                    <h4>React,SASS, Web Accessibility</h4>
+                    <h4>React and Web Accessibility</h4>
 
                     <div className = "buttons">
                     <a href = "https://github.com/tloaeza0/pennyjuice" target="_blank" rel="noopener noreferrer">View Github</a>
