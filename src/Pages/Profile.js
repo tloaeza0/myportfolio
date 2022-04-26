@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Resume from '../Teresa Loaeza Resume.pdf';
 
 const Profile = () => {
     return (
@@ -23,7 +24,7 @@ const Profile = () => {
         </div>
 
         <div className = "resume">
-            <a href = "Teresa Loaeza Resume.pdf" target="_blank" rel="noopener noreferrer"> View Resume Here</a>
+            <a href = {Resume} target="_blank" rel="noopener noreferrer"> View Resume Here</a>
         </div>
         </>
     )
